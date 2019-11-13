@@ -49,8 +49,18 @@ end
   # the number was even. Review the operator documentation if you've forgotten
   # this!
 def total_even_pairs(array_3)
-  array_3 = [[86262, 58115], [22558, 97709], [66236, 28056], [25992, 81375], [11248, 56789], [42783, 27353], [70796, 63432], [53234, 63058], [72316, 8675309]]
-
+  array_3 = [ 
+   [86262, 58115], [22558, 97709], [66236, 28056], [25992, 81375], [11248, 56789], [42783, 27353], [70796, 63432], [53234, 63058], [72316, 8675309]
+    ]
+  row_index = 0 
+  while array_3 < array_3.count do 
+    element_index = 0 
+    total_even_pairs = []
+    if (array_3[element_index % 2] == 0 ) && (array_3[element_index +=1] % 2  ==  0 )
+       total_even_pairs << array_3 [row_index]
+     end 
+     row_index += 1 
+   end
   
  
 end
